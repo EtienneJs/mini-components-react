@@ -1,13 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { ExpandingCards } from './challenge/01/Expanding-cards'
+import { ProgessSteps } from './challenge/02/ProgessSteps'
 
 function App() {
   return (
     <>
-        <ExpandingCards/>
+        <section >
+          <h1 style={{ paddingBottom:"5px", overflow:"hidden" }}>Expanding Cards</h1>
+            <ExpandingCards/>
+        </section>  
+        <section >
+          <h1 style={{ paddingBottom:"5px", overflow:"hidden" }}>Progress Steps</h1>
+          <ProgessSteps/>
+        </section>  
     </>
   )
 }
